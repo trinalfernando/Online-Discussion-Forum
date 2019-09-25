@@ -1,0 +1,80 @@
+body{
+  background: rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+}
+.wrapper{
+  width: 1170px;
+  margin: 2% auto;
+}
+.section-header{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-header h2{
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+.team-member{
+  width: 21%;
+  height: 350px;
+  float: left;
+  box-shadow: 5px 5px 15px #000;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: rgba(0, 0, 0, 0.85);
+}
+.team-member img{
+  width: 100%;
+}
+.team-member h3{
+  margin: 0;
+  text-transform: none;
+  font-size:20px;
+  color: yellow;
+}
+.team-member p{
+  color: #fff;
+}
+.team-member:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+.team-member:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 100%;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+.team-member:hover:before{
+  border-color: #d04f81;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+.team-member:hover:after{
+  border-color: #d04f81;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
